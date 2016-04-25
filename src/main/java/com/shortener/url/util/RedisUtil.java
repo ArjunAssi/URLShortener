@@ -23,6 +23,7 @@ public enum RedisUtil {
 
 	// Function to close Reids connection
 	public void closeRedisConnection() {
+		jedis.flushDB();
 		jedis.close();
 	}
 

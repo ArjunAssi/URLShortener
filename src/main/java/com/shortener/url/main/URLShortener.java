@@ -49,9 +49,10 @@ public class URLShortener {
 
 	// Function to get the original URL from short URL
 	public String getLongURL(String shortURL) {
-		
+
 		// Generate the ID from shortURL
-		int keygenID = KeygenUtil.INSTANCE.generateIDFromShortURL(shortURL.replace(APPENDER,""));
+		int keygenID = KeygenUtil.INSTANCE.generateIDFromShortURL(shortURL
+				.replace(APPENDER, ""));
 		String originalURL = RedisUtil.INSTANCE.fetchFromRedis(keygenID);
 		return originalURL;
 	}
@@ -85,6 +86,12 @@ public class URLShortener {
 			e.printStackTrace();
 		}
 
+	}
+
+	// Method to cleanup Redis
+	public void cleanup() {
+
+		RedisUtil.INSTANCE.closeRedisConnection();
 	}
 
 }

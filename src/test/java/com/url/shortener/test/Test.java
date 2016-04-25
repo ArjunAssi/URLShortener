@@ -36,5 +36,6 @@ public class Test {
 
 		// TESTING GENERATION OF SHORT URL USING input file
 		shortener.generateShortURL(inputFile, outputFile);
+		shortener.cleanup();
 	}
 }
