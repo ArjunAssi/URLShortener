@@ -33,10 +33,4 @@ public enum KeygenUtil {
 		}
 		return num;
 	}
-
-	public static void main(String[] args) {
-		
-		System.out.println(KeygenUtil.INSTANCE.convertToShortURL(1));
-		System.out.println(KeygenUtil.INSTANCE.generateIDFromShortURL("1"));
-	}
 }
