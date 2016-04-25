@@ -1,18 +1,19 @@
 package com.shortener.url.util;
 
+
 /**
  * This class deals with encoding and decoding for the URL for shortening
  * 
  * @author leonidas
- * @date 22st April
+ * @date 22nd April
  */
 public enum KeygenUtil {
 
 	// Instance to get access to functions
 	INSTANCE;
 
-	// For the base conversion
-	public static final String LITERALS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789-_";
+	// For the base conversion - Jumbled version to ensure no pattern arises
+	public static final String LITERALS = "tvoxQl8kDFqGCOnN_UYRbPiHT1JXSpWa4L9dwKzr3Mjf7-cZmu5EysgAheBI6V2";
 	public static final int BASE = LITERALS.length();
 
 	// Function to convert the ID from redis to a mapped short string
@@ -33,4 +34,5 @@ public enum KeygenUtil {
 		}
 		return num;
 	}
+
 }

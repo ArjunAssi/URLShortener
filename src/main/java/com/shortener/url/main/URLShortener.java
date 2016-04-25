@@ -16,7 +16,7 @@ import com.shortener.url.util.RedisUtil;
  * API for URL shortening functionality
  * 
  * @author leonidas
- * @date 22st April
+ * @date 22nd April
  */
 public class URLShortener {
 

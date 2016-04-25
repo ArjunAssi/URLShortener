@@ -6,7 +6,7 @@ import redis.clients.jedis.Jedis;
  * This class deals with providing interface to Redis API
  * 
  * @author leonidas
- * @date 22st April
+ * @date 22nd April
  */
 public enum RedisUtil {
 
