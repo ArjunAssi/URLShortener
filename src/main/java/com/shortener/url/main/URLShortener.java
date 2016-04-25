@@ -65,7 +65,7 @@ public class URLShortener {
 			BufferedWriter bufferedWriter = new BufferedWriter(
 					new OutputStreamWriter(fileOutputStream));
 
-			// Handle for readind from file
+			// Handle for reading from file
 			BufferedReader bufferedReader = new BufferedReader(new FileReader(
 					input));
 			String line;
